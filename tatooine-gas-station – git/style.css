@@ -1,0 +1,236 @@
+body{
+    background: url(slike/popzadina.jpg);
+    background-size: cover;
+    color: #fff;
+
+
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr§;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'header header'
+    'content content'
+    'footer footer';
+    margin-top: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 250px;
+   
+
+}
+
+#h2-1{
+    text-align: center;
+}
+#page{
+    text-align: center;
+}
+.gridContainer>div.headerContainer{
+    
+    background-color: rgb(83, 51, 51) ;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+.gridContainer>div.contentContainer{
+    
+    background-color: rgb(83, 51, 51) ;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+.gridContainer>div.footerContainer{
+    
+    background-color: rgb(83, 51, 51) ;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+.gridContainer>div:hover{
+    opacity: 1.0 ;
+}
+.headerContainer{
+    grid-area: header;
+    font-size: 200%;
+    color: bisque;
+    font-display: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+
+}
+
+#menu{
+    margin: 3px;
+    
+    border: 1px;
+
+   
+}
+.contentContainer{
+    display: block;
+    grid-area: content;
+    color: bisque;
+    font-display: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+
+}
+.footerContainer{
+    grid-area: footer;
+    text-align: center;
+    border-radius: 15px;
+}
+a:link{
+    color: bisque;
+    font-display: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:55%;
+}
+a:visited{
+    color: rgb(242, 136, 6);
+    font-display: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:55%;
+}
+#a{
+    
+    text-align: center;
+}
+#slika{
+    border-radius: 15px;
+    
+}
+.logo{
+    display: flex;
+}
+
+#table{
+    width: 70%;
+    border-spacing:0 10px;
+    margin:auto;
+    max-width: 1100px;
+    margin-top:100px;
+}
+.cookies-eu-banner {
+    
+    background: #444;
+    color: #fff;
+    padding: 6px;
+    font-size: 13px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    z-index: 10;
+}
+  
+.cookies-eu-banner button {
+    text-decoration: none;
+    background: #222;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 4px 7px;
+    margin: 2px 0;
+    font-size: 13px;
+    font-weight: 700;
+    transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+  
+.cookies-eu-banner button:hover {
+    background: #fff;
+    color: #222;
+}
+  
+.hidden {
+    display: none;
+}
+
+
+
+/* Mobiteli iphone 6/7/8/SE*/
+@media only screen
+and  (max-device-width : 375px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 3fr 1fr§;
+        grid-gap: 10px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        max-height: fit-content;
+    
+    }
+
+}
+
+/*iPad*/
+
+@media only screen
+and  (max-device-width : 1024px) {
+    .gridContainer{
+        margin: 200px 100px;
+    
+    }
+
+}
+@media only screen                      
+and  (max-device-height : 1024px) {
+    .gridContainer{
+        margin: 100px 200px;
+   
+    
+    }
+}
+
+
+
+@media only screen                      /*kad je u landscape modu*/
+and  (max-device-height : 768px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 3fr 1fr§;
+        grid-gap: 10px;
+        margin-top: 200px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 300px;
+        max-height: fit-content;
+    
+    }
+
+}
+
+
+/*iPhone 12*/
+
+@media only screen
+and  (max-device-width : 390px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 3fr 1fr§;
+        grid-gap: 10px;
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 30px;
+        max-height: fit-content;
+        
+    
+    }
+
+}
+
+
+
+
+/*       PODATAK UZET SA NETA 
+For Mobile devices: 320px-480px
+For Tablets or iPad: 480px - 768px
+For Laptop or small-size screen: 768px -1024px
+For Desktop or large-size screen: 1024px -1200px
+For Extra-large size device: 1200px and more
+*/ 
